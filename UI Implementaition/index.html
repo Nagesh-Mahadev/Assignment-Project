@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Meeting Availability</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-10 bg-light mx-auto my-5 border">
+          <h4 class="my-4 mx-3">Find a Free Time</h4>
+          <div class="row mx-3 my-5">
+            <div class="col-4 mb-4">
+              <label for="datePicker">Date</label>
+              <input
+                type="date"
+                name="datePicker"
+                id="datePicker"
+                class="form-control"
+              />
+            </div>
+            <div class="col-4 mb-4">
+              <label for="timePicker">Start Time</label>
+              <input
+                type="time"
+                name="timePicker"
+                id="timePicker"
+                class="form-control"
+              />
+            </div>
+            <div class="col-4 mb-4">
+              <label for="Duration">Duration</label>
+              <input
+                type="text"
+                name="duration"
+                id="duration"
+                class="form-control"
+              />
+            </div>
+            <span class="badge bg-secondary col-1 mx-3 my-3">10.00 AM</span>
+            <span class="badge bg-success col-1 mx-2 my-3" id="badge2"
+              >10.30 AM</span
+            >
+            <span class="badge bg-secondary col-1 mx-2 my-3">12.00 AM</span>
+            <div class="row my-2">
+              <div class="col-2 bg-success text-light text-center">
+                Available
+              </div>
+              <div class="col-2 bg-secondary text-light mx-5 text-center">
+                Not Available
+              </div>
+            </div>
+            <input
+              type="button"
+              value="Search"
+              id="dateBtn"
+              class="col-3 bg-success mx-auto mt-5 text-light"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
